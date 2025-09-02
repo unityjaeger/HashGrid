@@ -1,0 +1,2 @@
+## Introduction
+I made this module mainly because I just wanted one implementation of hash grids I can always use in my projects, and thought I'd just put it in a repository for others to use as well since its not much work. Aside from that, hash grids are easy to use and they are very useful as they enable efficient spatial queries by eliminating the need to check every object in the world when an algorithm only needs objects around a certain position.
