@@ -12,7 +12,7 @@ Which is used to create and return a grid object with the specified resolution, 
 ```luau
 grid:set(id: number, position: vector) -> ()
 ```
-Set handles entering/leaving/moving between cells, it uses the id as a key in the internal data structure, you would typically keep a map seperate from the hash grid that maps ids to instances if u want to use it with Roblox instances.
+Set handles entering/leaving/moving between cells, it uses the id as a key in the internal data structure, you would typically keep a map seperate from the hash grid that maps ids to instances if you want to use it with Roblox instances.
 ```luau
 grid:remove(id: number) -> ()
 ```
