@@ -17,3 +17,4 @@ default = "https://github.com/pesde-pkg/index"
 [target]
 environment = "roblox"
 lib = "main.luau"
+build_files = ["main.luau"]
