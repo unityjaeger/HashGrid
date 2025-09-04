@@ -1,0 +1,19 @@
+name = "unityjaeger/hashgrid"
+version = "0.1.0"
+authors = ["unityjaeger"]
+license = "MIT"
+repository = "https://github.com/unityjaeger/HashGrid"
+
+includes = [
+  "pesde.toml",
+  "README.md",
+  "LICENSE",
+  "main.luau"
+]
+
+[indices]
+default = "https://github.com/pesde-pkg/index"
+
+[target]
+environment = "roblox"
+lib = "main.luau"
