@@ -81,6 +81,8 @@ local function query(position: vector, radius: number, ...: Grid): {number}
 	local result = {}
 
 	for _, grid in {...} do
+		local hasCellBeenVisited: {[number]: boolean} = {}
+		
 		local cells = grid.cells
 		local resolution = grid.resolution
 		local cellsToTraverse = math.ceil(radius / resolution)
@@ -100,8 +102,14 @@ local function query(position: vector, radius: number, ...: Grid): {number}
 
 					local hashedPosition = (hashedCellX + hashedCellY + hashedCellZ) % MAX_BUCKETS
 					local entry = cells[hashedPosition]
-
+					
 					if entry then
+						if hasCellBeenVisited[hashedPosition] then
+							continue
+						end
+						
+						hasCellBeenVisited[hashedPosition] = true
+						
 						for objectId, objectPosition in entry do
 							if vector.magnitude(objectPosition - position) <= radius then
 								table.insert(result, objectId)
