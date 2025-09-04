@@ -1,6 +1,13 @@
 ## Introduction
 I made this module mainly because I just wanted one implementation of hash grids I can always use in my projects, and thought I'd just put it in a repository for others to use as well since it's not much work. This module is also written in pure luau so it is platform-agnostic, it's primarily intended for Roblox but you can also easily use it in other luau enviroments or in automated tests without needing to mock Roblox instances just for the hash grid. Aside from that, hash grids are easy to use and they are very useful as they enable efficient spatial queries by eliminating the need to check every object in the world when an algorithm only needs objects around a certain position.
 
+## Installation
+Either grab the latest release from the [Releases](https://github.com/unityjaeger/HashGrid/releases) tab or install it via wally or pesde, the package name is
+```
+unityjaeger/hashgrid@0.1.0
+```
+for both.
+
 ## API Overview
 The first exported function of the module is:
 ```luau
