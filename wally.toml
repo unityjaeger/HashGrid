@@ -1,0 +1,14 @@
+[package]
+name = "unityjaeger/hashgrid"
+version = "0.1.0"
+registry = "https://github.com/UpliftGames/wally-index"
+realm = "shared"
+license = "MIT"
+include = [
+	"main.luau",
+	"default.project.json",
+	"wally.toml",
+	"README.md",
+    "LICENSE"
+]
+exclude = ["**"]
